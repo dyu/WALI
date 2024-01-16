@@ -34,7 +34,7 @@ BASE_DIR=`dirname $SCRIPT_DIR`
 
 SRC_ARG="$1"
 SRC_RUN=
-[ "$#" -gt 1 ] && SRC_RUN=1
+[ "$#" -gt 1 ] && SRC_RUN=1 && shift
 shift
 
 # canonical src path
