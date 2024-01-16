@@ -73,4 +73,4 @@ $LD --no-gc-sections --no-entry --shared-memory --export-memory --max-memory=671
 ENV_FILE=target/env.txt
 [ -e "$ENV_FILE" ] || touch $ENV_FILE
 
-iwasm --env-file=$ENV_FILE $OUT_BIN.wasm
+iwasm --env-file=$ENV_FILE $OUT_BIN.wasm $@
